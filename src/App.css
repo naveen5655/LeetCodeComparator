@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Dosis', sans-serif;
+}
+
+body{
+  /* min-height: 100vh; */
+  background-color: #ffffff;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #bbb5be;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-color: #65317c;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #ffffff;
+}
+
+#root {
+  position: relative;
+  /* min-height: 100vh; */
+}
+
+p{
+  margin: 1.5rem;
+}
+
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: space-between;
+}
+
+header {
+  background-color: #6d2b8a;
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #fff;
+  margin-bottom: 20px;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
+#logo {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.btn {
+  color: #F6F4EB;
+  cursor: pointer;
+  font-size:1.05rem;
+  font-weight: 700;
+  line-height: 30px;
+  padding: 8px 15px 5px 15px;
+  margin: 2rem; 
+  background-color: #65317c;
+  border: 1px #4682A9 solid;
+  border-radius: 10px;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+input{
+  font-size: 1.25rem;
+  width: 50%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 0.01px solid black;
+  background-color: rgba(104, 34, 136, 0.142);
+}
+
+form .btn {
+  background-color: #6d2b8a;
+}
+
+.compare-div {
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: center;
+  flex-basis: 1;
+}
+
+.forms {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.forms form {
+  width: 100%;
+}
+
+#username1, #username2 {
+  width: 70%;
+}
+
+.data-display{
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.data-display h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 480;
+  margin: 1rem;
+}
+
+.data-display h3{
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: 1rem;
+}
+
+.problems,
+.compare-problems {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 1.25rem;
+  font-weight: 300;
+  margin: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.problems p,
+.compare-problems p{
+  margin: 0.75rem;
+}
+
+.progressBar{
+  margin: 2rem;
+}
+
+.compare-data{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.message {
+  margin: 2rem;
+  font-weight: 400;
+  color: #fff;
+  font-size: 1rem;
+  padding: 15px 20px;
+  background-color: #6d2b8a;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.footer {
+  width: 100%;
+  height: 40px;
+  padding-top: 20px;
+  text-align: center;
+  background-color: #82688e;
+  color: #fff;
+}
+
+@media screen and (max-width: 450px) {
+  .compare-div{
+    display: block;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .problems {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 1200px){
+  .compare-problems{
+    flex-direction: column;
+  }
+}
