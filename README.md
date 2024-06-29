@@ -11,4 +11,4 @@ The Leetcode Comparator is a web application built using **React.js** that allow
 ## Compare profiles
 ![image](https://github.com/naveen5655/LeetCodeComparator/assets/89301294/bae586cf-1055-472f-a843-b63e92606694)
 
-## Thank ou for visiting my repository.
+### Thank ou for visiting my repository.
